@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=TASA+Explorer:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Portafolio</title>
+</head>
+<body>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <header>
+        <section id="inicio">
+        <div class="hero">
+            <div class="navbar">
+                <section id="inicio">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#informacion">INFORMACION</a></li>
+                    <li><a href="#portafolio">PORTAFOLIO</a></li>
+                    <li><a href="#lenguajes">LENGUAJES</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+            </div>
+                <h1>Ana Gamez</h1>
+                <h2>Soy una Ingeniera en Software enfocada en crear soluciones funcionales y bien estructuradas, 
+                <br></br>con atención al detalle y compromiso por la calidad en cada proyecto.</h2>
+        </div>
+        </section>
+        <div class="profile">
+            <div class="square"></div>
+        </div>
+        
+        <div class="info">
+            <section id="informacion">
+                <img class="img2" src="img/star.gif" alt="">
+            </section>
+            <div class="contenedores">
+                <div class="izq">
+                    <h2>Información</h2>
+                    <p>Soy Ana Lila Ibarra Gamez estudiante de Ingeniería en Software en el 5° semestre apasionada por el desarrollo de soluciones tecnológicas eficientes y creativas interesada en aprender y aplicar buenas prácticas de programación y diseño de software</p>
+                </div>
+
+                <div class="der">
+                    <h2>Objetivo</h2>
+                    <p>Desarrollar mis conocimientos en programación y participar en proyectos que me ayuden a crecer como profesional.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="estatico">
+        </div>
+
+        <section id="portafolio" class="portfolio">
+            <div class="portfolio-layout">
+                
+                <model-viewer
+                    src="B/scene.gltf"
+                    camera-controls
+                    auto-rotate
+                ></model-viewer>
+
+                <div class="portfolio-content">
+                    <h2>Portafolio</h2>
+                    <div id="projects-container" class="projects-container"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modal-img" src="" alt="">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+                <a id="modal-repo" href="#" target="_blank">Ver repositorio</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="lenguajes">
+        <div class="leng">
+            <h2>LENGUAJES</h2>
+            <div class="fila">
+                <img class="log anim-leng" src="img/js.png" alt="java script">
+                <img class="log anim-leng" src="img/java.png" alt="java">
+                <img class="log anim-leng" src="img/sql.png" alt="sql">
+            </div>
+            <div class="fila">
+                <img class="log anim-leng" src="img/figma.png" alt="figma">
+                <img class="log anim-leng" src="img/github.png" alt="github">
+                <img class="log anim-leng" src="img/vsc.png" alt="vs">
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="footer">
+        <h2>Contacto</h2>
+
+        <p>Correo electrónico: 
+            <a href="mailto:ana.ibarra252569@gmail.com">ana.ibarra252569@gmail.com</a>
+        </p>
+
+        <p>
+            GitHub: 
+            <a href="https://github.com/lLagmzl?tab=repositories" target="_blank">
+                lLagmzl
+            </a>
+        </p>
+
+        <p>Número de teléfono: **- ***- ***</p>
+
+        <p class="copy">2025 Ana Lila Ibarra — Portafolio</p>
+    </section>
+
+    <script src="auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Super Mario 64 - Bowser
+* source:	https://sketchfab.com/3d-models/super-mario-64-bowser-cee86d3a77c54d499aaa9e12da7af597
+* author:	exeperimentgameing (https://sketchfab.com/exeperimentgameing)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Super Mario 64 - Bowser" (https://sketchfab.com/3d-models/super-mario-64-bowser-cee86d3a77c54d499aaa9e12da7af597) by exeperimentgameing (https://sketchfab.com/exeperimentgameing) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
