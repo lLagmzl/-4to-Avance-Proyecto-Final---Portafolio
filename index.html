@@ -19,6 +19,7 @@
             <div class="navbar">
                 <section id="inicio">
                 <ul>
+                    <li><img src="img/mariomimido.gif" class="mario" alt="mario"></li>
                     <li><a href="#inicio">INICIO</a></li>
                     <li><a href="#informacion">INFORMACION</a></li>
                     <li><a href="#portafolio">PORTAFOLIO</a></li>
@@ -29,6 +30,9 @@
                 <h1>Ana Gamez</h1>
                 <h2>Soy una Ingeniera en Software enfocada en crear soluciones funcionales y bien estructuradas, 
                 <br></br>con atención al detalle y compromiso por la calidad en cada proyecto.</h2>
+        </div>
+        <div class="scroll-img">
+            <img src="img/Donpisoton.png" class="imagen-static" alt="Donpisoton">
         </div>
         </section>
         <div class="profile">
@@ -78,6 +82,7 @@
                 <img id="modal-img" src="" alt="">
                 <h3 id="modal-title"></h3>
                 <p id="modal-desc"></p>
+                <p><strong>Tecnologías:</strong> <span id="modal-tech"></span></p>
                 <a id="modal-repo" href="#" target="_blank">Ver repositorio</a>
             </div>
         </div>
@@ -100,24 +105,44 @@
     </section>
 
     <section id="contacto" class="footer">
-        <h2>Contacto</h2>
+        <div class="bomb">
+            <img src="img/toad.png" class="img4" alt="Toad info">
+        </div>
+        <div>
+            <h2>Contacto</h2>
 
-        <p>Correo electrónico: 
-            <a href="mailto:ana.ibarra252569@gmail.com">ana.ibarra252569@gmail.com</a>
-        </p>
+            <p>Correo electrónico: 
+                <a href="mailto:ana.ibarra252569@gmail.com">ana.ibarra252569@gmail.com</a>
+            </p>
 
-        <p>
-            GitHub: 
-            <a href="https://github.com/lLagmzl?tab=repositories" target="_blank">
-                lLagmzl
-            </a>
-        </p>
+            <p>
+                GitHub: 
+                <a href="https://github.com/lLagmzl?tab=repositories" target="_blank">
+                    lLagmzl
+                </a>
+            </p>
 
-        <p>Número de teléfono: **- ***- ***</p>
+            <p>Número de teléfono: **- ***- ***</p>
 
-        <p class="copy">2025 Ana Lila Ibarra — Portafolio</p>
+            <p class="copy">2025 Ana Lila Ibarra — Portafolio</p>
+        </div>
     </section>
+    
 
     <script src="auth.js"></script>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            const img = document.querySelector(".imagen-static");
+
+            const limite = 205;  
+
+            if (window.scrollY < limite) {
+                img.style.top = (80 + window.scrollY) + "px";
+            } else {
+                img.style.top = limite + "px"; 
+            }
+        });
+    </script>
 </body>
 </html>

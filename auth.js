@@ -1,5 +1,6 @@
 const API_BASE = "https://portfolio-api-three-black.vercel.app/api/v1";
 const itsOnId = "252569";
+const modalTech = document.getElementById("modal-tech");
 
 async function getPublicProjects(itsonId) {
     try {
@@ -62,6 +63,16 @@ async function renderProjects() {
         const card = createProjectCard(project);
         projectsContainer.appendChild(card);
     });
+}
+
+function openModal(project) {
+    modal.style.display = "flex";
+    modalImg.src = project.images[0] || "https://via.placeholder.com/300x200";
+    modalTitle.textContent = project.title;
+    modalDesc.textContent = project.description;
+    modalRepo.href = project.repository;
+
+    modalTech.textContent = project.technologies?.join(", ") || "No especificado";
 }
 
 document.addEventListener("DOMContentLoaded", renderProjects);
